@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <h1>Pomodoro 🍅</h1>
+    <div class="modes">
+      <button id="pomo-btn" class="active">Pomodoro</button>
+      <button id="short-btn" class="a">Short Break</button>
+      <button id="long-btn" class="a">Long Break</button>
+    </div>
+    <div class="timer-box">
+      <div class="circle">
+        <h2 id="minut">25</h2>
+        <h2 id="blink" class="a">:</h2>
+        <h2 id="sekund">00</h2>
+      </div>
+    </div>
+
+    <div class="start-stop">
+      <button class="start">Start</button>
+      <button class="reset">Reset</button>
+      <button class="stop">Stop</button>
+    </div>
+  </body>
+
+  <script src="./main.js"></script>
+</html>

@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lobster Two";
+  background-color: transparent;
+}
+body {
+  background: #e5e5e5;
+  width: 100vw;
+  min-height: 100vh;
+}
+h1 {
+  color: #c44747;
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 150%;
+  font-size: 64px;
+}
+.modes {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+button {
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: 0;
+  padding: 0.4rem 1.8rem;
+  color: #f85959;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.timer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.circle {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 20px solid crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 3.5rem;
+  color: crimson;
+}
+
+.start-stop {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.start,
+.reset,
+.stop {
+  background-color: crimson;
+  color: #fff8ee;
+}
+.active {
+  color: #fff8ee;
+  background-color: crimson;
+}
+button:hover {
+  background-color: #fff8ee;
+  color: red;
+  box-shadow: 0 0 25px #c44747;
+}
+.move {
+  animation: anima 1s infinite forwards;
+}
+@keyframes anima {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
